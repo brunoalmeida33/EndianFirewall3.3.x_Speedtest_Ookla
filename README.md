@@ -13,6 +13,7 @@
 cd /usr/local/src <br>
 git clone https://github.com/brunoalmeida33/EndianFirewall3.3.x_Speedtest_Ookla.git <br>
 cd EndianFirewall3.3.x_Speedtest_Ookla <br>
+./libfix.sh <br>
 ./setup install <br>
 
 ![image](https://user-images.githubusercontent.com/33161398/208249842-27dd3dcb-9c8f-413b-99fa-8818d69c039f.png)
