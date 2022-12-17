@@ -1,11 +1,13 @@
 #!/bin/bash
-
+clear
 OSVER=`cat /etc/release | grep "Endian Firewall Community release 3.[0-3].*"`
 
 if [ -z "$OSVER" ]; then
+echo " "
 echo Sistema operacional incompativel!
 exit 1
 else
+echo " "
 echo SO `cat /etc/release` Compativel.
 fi
 
@@ -30,7 +32,7 @@ fi
 /sbin/ldconfig
 
 echo " "
-echo Zabbix Proxy 6.0.1 - 4nsecurity instalado com sucesso
+echo Ookla Speedtest - 4nsecurity instalado com sucesso
 
 exit 
     
@@ -38,17 +40,20 @@ exit
   remove)
   
 echo " "
-rm /usr/local/bin/speedtest
+rm /usr/local/bin/speedtest 2>/dev/null
 if [ -f /usr/local/bin/speedtest ]; then
 rm -f /usr/local/bin/speedtest
 else
+echo " "
 echo "Pacote Ookla Speedtest Removido."
 fi
 
     ;;
 
   *)
+    echo " "
     echo $"Usage: $0 {install|remove}"
+    echo " "
     exit 1
 esac
 
