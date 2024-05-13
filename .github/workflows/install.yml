@@ -16,4 +16,4 @@ jobs:
 
     - name: Run script
       run: |
-        echo "teste" > /tmp/git
+        echo "teste" 
