@@ -15,7 +15,7 @@ jobs:
 
     - name: Run script
       run: |
-        cd $GITHUB_WORKSPACE
+        cd ../../
         chmod +x ./lib64fix.sh
         chmod +x ./setup
         sh ./lib64fix.sh
