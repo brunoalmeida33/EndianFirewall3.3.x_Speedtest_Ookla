@@ -1,8 +1,9 @@
-name: Execute Script on Pull
+name: Execute Script on Push
 
 on:
-  pull_request:
-    types: [opened, synchronize]
+  push:
+    branches:
+      - main # Substitua "master" pelo nome da sua branch principal
 
 jobs:
   build:
